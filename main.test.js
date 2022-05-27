@@ -30,27 +30,27 @@ describe('Express Route Test', function () {
 	// it('login failed', async () => {
 	// })
 
-	it('register', async () => {
-		return request
-			.post('/register')
-			.send({username: 'user6', password: "test" })
-			.expect('Content-Type', /json/)
-			.expect(200).then(response => {
-				expect(response.body).toEqual(
-					expect.objectContaining({
-						_id: expect.any(String),
-						name: expect.any(String),
-						age: expect.any(Number),
-					})
-				);
-			});
-	});
+// 	it('register', async () => {
+// 		return request
+// 			.post('/register')
+// 			.send({username: 'user6', password: "test" })
+// 			.expect('Content-Type', /json/)
+// 			.expect(200).then(response => {
+// 				expect(response.body).toEqual(
+// 					expect.objectContaining({
+// 						_id: expect.any(String),
+// 						name: expect.any(String),
+// 						age: expect.any(Number),
+// 					})
+// 				);
+// 			});
+// 	});
 
 	it('login successfully', async () => {
 		return request
 			.post('/login/update')
 			.send({username: 'user1', password: "test" })
-			.send({Name: 'Nizam', Phone: '0136797035', Email: 'nizamrosli.nr99@gmail.com'})
+			.send({Name: 'Alif', Phone: '01110803084', Email: 'alifikhwanmmdsadon@gmail.com'})
 			.expect('Content-Type', /text/)
 			.expect(200).then(response => {
 				expect(response.body).toEqual(

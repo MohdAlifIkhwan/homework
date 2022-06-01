@@ -29,8 +29,6 @@ class User {
 							"Password": password,
 							"HashedPassword": hash,
 							"Name": name,
-							"OfficerNo": officerno,
-							"Rank": rank,
 							"Phone": phone,});
 	}
 
@@ -66,8 +64,6 @@ class User {
 					"Password": password,
 					"HashedPassword": hash,
 					"Name": name,
-					"OfficerNo": officerno,
-					"Rank": rank,
 					"Phone": phone,})
 		}
 
